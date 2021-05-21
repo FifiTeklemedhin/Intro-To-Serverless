@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const fs = require('fs') //get the methods in the fs package
 
 //if you wanna add more files, just put a comma after the filename (array)
-
+/*
 const commit_file = ['./../../HackerVoice/index.js']
 
 for(var i = 0; i < commit_file.length; i++) {
@@ -15,7 +15,7 @@ for(var i = 0; i < commit_file.length; i++) {
         }
     })
 }
-
+*/
 
 
 uri = 'https://hackervoice.azurewebsites.net/api/HackerVoice?';
