@@ -3,10 +3,9 @@ module.exports = async function (context, req) {
 
     const password = req.query.password;
     //const name = (req.query.name || (req.body && req.body.name));
-    let responseMessage = "Access granted.";
-    if(password == undefined || password != "letmein")
-        responseMessage = "Access denied.";
-    
+    const responseMessage = password
+        ? password 
+        : "Put in a password!";
 
     context.res = {
         // status: 200, /* Defaults to 200 */
